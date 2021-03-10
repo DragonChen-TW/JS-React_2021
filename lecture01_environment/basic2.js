@@ -16,17 +16,17 @@ hi();
 printName('DragonChen');
 printName('NoobTW');
 
-hi = () => {
-    console.log('hi');
+const hello = () => {
+    console.log('hello');
 }
-printName = name => {
+const printNamev2 = name => {
     console.log('HI, ' + name + ', how are you!');
 }
-hi()
-printName('NoobTW');
+hello()
+printNamev2('NoobTW');
 
 // =========== NPM and Packages ===========
-print('NPM and Packages');
+console.log('NPM and Packages');
 
 const md5 = require('md5');
 
