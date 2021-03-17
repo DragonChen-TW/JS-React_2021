@@ -5,9 +5,13 @@
 // =========== Function ===========
 console.log('=========== Function ===========');
 
+// Define function
+hi();
 function hi() {
     console.log('hi');
 }
+
+printName('NoobTW')
 function printName(name) {
     console.log('HI, ' + name + ', how are you!');
 }
@@ -16,6 +20,7 @@ hi();
 printName('DragonChen');
 printName('NoobTW');
 
+// Something else
 const hello = () => {
     console.log('hello');
 }
@@ -25,9 +30,14 @@ const printNamev2 = name => {
 hello()
 printNamev2('NoobTW');
 
+const printNamev3 = name => console.log('HI, ' + name + ', how are you!');
+printNamev3('Apple');
+
+
+
 // =========== NPM and Packages ===========
 console.log('NPM and Packages');
 
 const md5 = require('md5');
-
-console.log(md5('message'));
+const hash = md5('Apple');
+console.log(hash);
