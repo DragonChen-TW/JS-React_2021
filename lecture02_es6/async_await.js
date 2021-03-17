@@ -2,14 +2,17 @@
 // Title:	Basic 2 - function and package
 // Date:	2021/03/09
 
+// 這個檔案不能執行！
+// register(), login() 之類的函式是虛擬碼！！
+
 // =========== Function ===========
 const { get } = require('axios');
 
-// // will cause error
-// console.log('start');
-// const a = get('https://api.noob.tw/test.json');
-// console.log(a);
-// console.log('end');
+// will cause error
+console.log('start');
+const a = get('https://api.noob.tw/test.json');
+console.log(a);
+console.log('end');
 
 // use callback
 console.log('start');
@@ -48,3 +51,12 @@ register(user, pass)
         console.log(file);
     });
 
+
+get('https://api.noob.tw/test.json')
+    .then((response) => {
+        console.log(response);
+        console.log('end');
+    })
+    .catch((err) => {
+        console.log(err);
+    });
