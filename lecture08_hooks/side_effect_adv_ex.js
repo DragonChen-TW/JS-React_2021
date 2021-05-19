@@ -8,8 +8,8 @@ function Example() {
   
   useEffect(() => {
       console.log('呼叫此 function');
-      document.title = `你按了 ${count} 次`;
-  });
+      document.title = `你按了 ${count} 次 和 ${text}`;
+  }, [text, count]);
 
   return (
     <div>
