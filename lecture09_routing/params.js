@@ -21,21 +21,21 @@ export default function ParamsExample() {
 
         <ul>
           <li>
-            <Link to="/apple">Apple</Link>
+            <Link to="/user/apple">Apple</Link>
           </li>
           <li>
-            <Link to="/dragon">Dragon</Link>
+            <Link to="/user/dragon">Dragon</Link>
           </li>
           <li>
-            <Link to="/noobtw">NoobTW</Link>
+            <Link to="/user/noobtw">NoobTW</Link>
           </li>
           <li>
-            <Link to="/someone-empty">Someone Empty</Link>
+            <Link to="/user/someone-empty">Someone Empty</Link>
           </li>
         </ul>
 
         <Switch>
-          <Route path="/:name" children={<UserProfile />} />
+          <Route path="/user/:name" children={<UserProfile />} />
         </Switch>
       </div>
     </Router>
